@@ -1,0 +1,7 @@
+if(id*id+id
+{
+	id=id+id*id;
+}
+else{
+	id=digit+digit;
+}
