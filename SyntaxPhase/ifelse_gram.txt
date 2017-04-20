@@ -1,0 +1,11 @@
+S:I(C){E}N{E}
+E:Z=P;
+P:TQ
+Q:+TQ/e
+T:FR
+R:*FR/e
+F:Z/digit
+Z:id
+C:P/e
+I:if
+N:else
