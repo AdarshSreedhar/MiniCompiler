@@ -7,6 +7,7 @@ class Client{
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
 		/*
+		//since lexical phase isn't combined into syntax phase, i have commented this out else use this in the future
 		Lex l = new Lex();
 		
 		System.out.println("********************************************* LEX ***********************************");
@@ -26,13 +27,13 @@ class Client{
 	
 		try{
 			String sb = new String(Files.readAllBytes(Paths.get("parser_input.txt")));
-			if(pp.parse(sb)){
-				/*System.out.println("\n******************************** INTERMEDIATE CODE GENERATOR ***********************************");
-				String str = new String(Files.readAllBytes(Paths.get("icg_input.txt")));
-				ThreeAddressCodeGenerator icg = new ThreeAddressCodeGenerator(str);*/
+			if(pp.parse(sb))
+			{
+				System.out.println("accept");	
 			}
 		}
-		catch(IOException e){
+		catch(IOException e)
+		{
 			e.printStackTrace();
 		}
 	}
