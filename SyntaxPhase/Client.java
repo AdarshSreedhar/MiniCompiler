@@ -6,6 +6,7 @@ import java.nio.file.Paths;
 class Client{
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
+		/*
 		Lex l = new Lex();
 		
 		System.out.println("********************************************* LEX ***********************************");
@@ -13,7 +14,7 @@ class Client{
 
 		l.getTokens();
 		l.display();
-
+		*/
 		System.out.println("********************************************* PARSER ********************************");
 		PredictiveParser pp = new PredictiveParser();
 		
@@ -21,14 +22,14 @@ class Client{
 		pp.firstDisplay();
 		pp.followDisplay();
 		pp.tableDisplay();
-
+	
 	
 		try{
 			String sb = new String(Files.readAllBytes(Paths.get("parser_input.txt")));
 			if(pp.parse(sb)){
-				System.out.println("\n******************************** INTERMEDIATE CODE GENERATOR ***********************************");
+				/*System.out.println("\n******************************** INTERMEDIATE CODE GENERATOR ***********************************");
 				String str = new String(Files.readAllBytes(Paths.get("icg_input.txt")));
-				ThreeAddressCodeGenerator icg = new ThreeAddressCodeGenerator(str);
+				ThreeAddressCodeGenerator icg = new ThreeAddressCodeGenerator(str);*/
 			}
 		}
 		catch(IOException e){
